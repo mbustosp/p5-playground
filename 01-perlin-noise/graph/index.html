@@ -5,17 +5,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
-
+    <title>Perlin Noise - Graph</title>
   </head>
   <body>
     <main>
+      <div class="playground">
+        <div id="playground__canvas__container"></div>
+        <div class="playground__selector__container">
+          <label for="offset-perlin">X Increment</label>
+          <input type="range" id="offset-perlin" name="offset-perlin" min="0" max="1" value="1" step="0.02"/>
+          <span id="offset-perlin-value"></span>
+        </div>
+      </div>
+      
     </main>
-    
-    <div class="selector__container">
-      <label for="offset-perlin">X Increment</label>
-      <input type="range" id="offset-perlin" name="offset-perlin" min="0" max="1" value="1" step="0.02"/>
-      <span id="offset-perlin-value"></span>
-    </div>
     <script src="sketch.js"></script>
   </body>
 </html>

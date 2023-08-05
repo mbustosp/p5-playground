@@ -3,11 +3,30 @@ body {
     margin: 0;
     padding: 0;
 }
+
 canvas {
     display: block;
 }
 
-.selector__container {
+.playground {
     display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+}
+
+.playground__selector__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playground__selector__container label {
+    display: block;
+}
+
+#playground__canvas__container {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

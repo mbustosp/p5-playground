@@ -6,17 +6,20 @@ const maxToneFreq = 800
 // Slider
 const slider = document.getElementById('offset-perlin')
 const sliderValue = document.getElementById('offset-perlin-value')
-sliderValue.innerText = slider.value
 inc = parseFloat(slider.value)
+sliderValue.innerText = inc.toFixed(2)
 
 slider.addEventListener('change', function (e) {
     inc = parseFloat(e.target.value)
-    sliderValue.innerText = inc
+    sliderValue.innerText = inc.toFixed(2)
 })
 
 // Rendering
 function setup() {
-    createCanvas(400, 400)
+    let canvas = createCanvas(400, 400)
+
+    // Set the ID of the canvas container to "customCanvasContainer"
+    canvas.parent('playground__canvas__container')
 }
 
 function draw() {
