@@ -17,8 +17,6 @@ slider.addEventListener('change', function (e) {
 // Rendering
 function setup() {
     let canvas = createCanvas(400, 400)
-
-    // Set the ID of the canvas container to "customCanvasContainer"
     canvas.parent('playground__canvas__container')
 }
 
